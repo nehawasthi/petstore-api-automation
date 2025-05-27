@@ -1,0 +1,7 @@
+"Hello, my name is Deha Awasthi. I’m from Kanpur and have completed my MCA from Krishna Engineering College. I have around 7 years of experience in software testing across the fintech and e-commerce domains, with companies like Oxygen Services, Snapdeal, Quine Tribe, and Pure Software.
+
+I’ve worked in both manual and automation roles — currently around 60% automation and 40% manual. In Pure Software, I worked as an individual contributor where I was responsible for ensuring high product quality.
+
+I designed a reusable Selenium automation framework using Java, TestNG, Maven, and integrated it with ExtentReports and Log4j. For version control, I use GitHub, and in some projects, we used GitHub Actions for CI/CD.
+
+On the manual side, I create detailed test cases in tools like Microsoft Test Manager and execute regression and exploratory testing. I also collaborate closely with developers, business analysts, and product owners, and actively participate in all Agile ceremonies including daily standups, sprint planning, and retrospectives."

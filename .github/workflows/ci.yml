@@ -1,0 +1,54 @@
+name: Java CI with TestNG and Playwright
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: windows-latest  # Use Windows since your local dev is Windows-based
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Set up Node.js (for Playwright)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install Playwright Browsers
+        run: |
+          npm install -D playwright
+          npx playwright install --with-deps
+
+      - name: Build Project (Skip Tests)
+        run: mvn clean install -DskipTests=true
+
+      - name: Run Tests
+        run: mvn test
+
+      - name: Generate Coverage Report
+        run: mvn verify
+
+      - name: Upload ExtentReport
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: extent-report
+          path: test-output/ExtentReport.html
+
+      - name: Upload JaCoCo Coverage Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jacoco-report
+          path: target/site/jacoco/index.html

@@ -1,0 +1,11 @@
+{
+  "Urls": {
+    "qa": "https://petstore.swagger.io/v2",
+    "dev": "https://dev-petstore.example.com",
+    "prod": "https://prod-petstore.example.com"
+  },
+  "Headers": {
+    "Content-Type": "application/json",
+    "Accept": "application/json"
+  }
+}

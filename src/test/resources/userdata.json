@@ -1,0 +1,25 @@
+{
+  "user": {
+    "id": 1001,
+    "username": "neha_ui_test",
+    "firstName": "Neha",
+    "lastName": "Awasthi",
+    "email": "neha.awasthi@example.com",
+    "password": "Password123!",
+    "phone": "9876543210",
+    "userStatus": 1
+  },
+
+  "invalidUser": {
+    "id": "invalid_id",
+    "username": "",
+    "firstName": "###",
+    "lastName": "",
+    "email": "invalid-email",
+    "password": "",
+    "phone": "not_a_phone",
+    "userStatus": -1
+  },
+
+  "nonExistentUsername": "ghost_user_404"
+}
