@@ -36,6 +36,11 @@ jobs:
       - name: Run Tests & Generate Coverage
         run: mvn clean verify
 
+      - name: Check JaCoCo Directory
+        run: |
+          echo "Listing target/site/jacoco"
+          ls -l target/site/jacoco || echo "Directory not found"
+
       - name: Upload ExtentReport
         if: always()
         uses: actions/upload-artifact@v4
@@ -48,4 +53,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: jacoco-report
-          path: reports/target/site/jacoco/index.html
+          path: target/site/jacoco/index.html
