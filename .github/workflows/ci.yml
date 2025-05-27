@@ -37,15 +37,15 @@ jobs:
         run: mvn test
 
       - name: Upload ExtentReport
-      if: always()
-      uses: actions/upload-artifact@v4
-      with:
-        name: extent-report
-        path: test-output/ExtentReport.html
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: extent-report
+          path: test-output/ExtentReport.html
 
       - name: Upload JaCoCo Coverage Report
-      if: always()
-      uses: actions/upload-artifact@v4
-      with:
-        name: jacoco-report
-        path: target/site/jacoco/index.html
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jacoco-report
+          path: target/site/jacoco/index.html
