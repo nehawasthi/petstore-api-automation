@@ -101,14 +101,11 @@
 							<goal>report</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>
-								${project.build.directory}/jacoco-report</outputDirectory>
-							<classesDirectory>
-								${project.build.testOutputDirectory}</classesDirectory>
+							<classesDirectory>${project.build.testOutputDirectory}</classesDirectory>
 							<additionalSourceDirs>
-								<additionalSourceDir>
-									${project.build.testSourceDirectory}</additionalSourceDir>
+								<additionalSourceDir>${project.build.testSourceDirectory}</additionalSourceDir>
 							</additionalSourceDirs>
+							<outputDirectory>${project.build.directory}/jacoco-report</outputDirectory>
 							<includes>
 								<include>**/base/*.class</include>
 								<include>**/apis/*.class</include>
@@ -117,7 +114,6 @@
 					</execution>
 				</executions>
 			</plugin>
-
 		</plugins>
 	</build>
 </project>
