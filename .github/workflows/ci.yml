@@ -36,23 +36,9 @@ jobs:
       - name: Run Tests & Generate Coverage
         run: mvn clean verify
 
-      - name: Debug JaCoCo Report Directory
-        run: |
-          echo "Checking contents of target directory..."
-          ls -l target
-          echo "Checking contents of target/jacoco-report..."
-          ls -l target/jacoco-report || echo "Directory not found"
-
       - name: Upload ExtentReport
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: extent-report
           path: reports/ExtentReport.html
-
-      - name: Upload JaCoCo Coverage Report
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: jacoco-report
-          path: target/jacoco-report/index.html

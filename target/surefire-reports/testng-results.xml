@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="1" ignored="1" total="10" passed="7" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-27T23:42:25 IST" name="PetStore API Suite" finished-at="2025-05-27T23:42:28 IST" duration-ms="2631">
+    <groups>
+    </groups>
+    <test started-at="2025-05-27T23:42:25 IST" name="Test" finished-at="2025-05-27T23:42:28 IST" duration-ms="2631">
+      <class name="apis.GetUserByNameTest">
+        <test-method signature="getUserNegative()[pri:0, instance:apis.GetUserByNameTest@144ab54]" started-at="2025-05-27T23:42:25 IST" name="getUserNegative" finished-at="2025-05-27T23:42:27 IST" duration-ms="1565" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserNegative -->
+        <test-method retried="true" signature="getUserPositive()[pri:0, instance:apis.GetUserByNameTest@144ab54]" started-at="2025-05-27T23:42:25 IST" name="getUserPositive" finished-at="2025-05-27T23:42:27 IST" duration-ms="1573" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [404]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [404]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1419)
+at org.testng.Assert.assertEquals(Assert.java:1383)
+at org.testng.Assert.assertEquals(Assert.java:1429)
+at apis.GetUserByNameTest.getUserPositive(GetUserByNameTest.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserPositive -->
+        <test-method signature="getUserPositive()[pri:0, instance:apis.GetUserByNameTest@144ab54]" started-at="2025-05-27T23:42:27 IST" name="getUserPositive" finished-at="2025-05-27T23:42:28 IST" duration-ms="937" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [404]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [404]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1419)
+at org.testng.Assert.assertEquals(Assert.java:1383)
+at org.testng.Assert.assertEquals(Assert.java:1429)
+at apis.GetUserByNameTest.getUserPositive(GetUserByNameTest.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserPositive -->
+      </class> <!-- apis.GetUserByNameTest -->
+      <class name="apis.DeleteUserTest">
+        <test-method signature="deleteUserNegative()[pri:0, instance:apis.DeleteUserTest@2cfa2c4f]" started-at="2025-05-27T23:42:25 IST" name="deleteUserNegative" finished-at="2025-05-27T23:42:27 IST" duration-ms="1570" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUserNegative -->
+        <test-method signature="deleteUserPositive()[pri:0, instance:apis.DeleteUserTest@2cfa2c4f]" started-at="2025-05-27T23:42:27 IST" name="deleteUserPositive" finished-at="2025-05-27T23:42:28 IST" duration-ms="930" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUserPositive -->
+      </class> <!-- apis.DeleteUserTest -->
+      <class name="base.BaseTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:base.BaseTest@6c302a1d]" started-at="2025-05-27T23:42:21 IST" name="setup" finished-at="2025-05-27T23:42:25 IST" duration-ms="3543" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:base.BaseTest@6c302a1d]" started-at="2025-05-27T23:42:28 IST" name="tearDown" finished-at="2025-05-27T23:42:28 IST" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- base.BaseTest -->
+      <class name="apis.CreateUserTest">
+        <test-method signature="createUserPositive()[pri:0, instance:apis.CreateUserTest@12968227]" started-at="2025-05-27T23:42:25 IST" name="createUserPositive" finished-at="2025-05-27T23:42:27 IST" duration-ms="1564" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserPositive -->
+        <test-method signature="createUserNegative()[pri:0, instance:apis.CreateUserTest@12968227]" started-at="2025-05-27T23:42:25 IST" name="createUserNegative" finished-at="2025-05-27T23:42:27 IST" duration-ms="1564" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserNegative -->
+      </class> <!-- apis.CreateUserTest -->
+      <class name="apis.UpdateUserTest">
+        <test-method signature="updateUserPositive()[pri:0, instance:apis.UpdateUserTest@6ecab872]" started-at="2025-05-27T23:42:27 IST" name="updateUserPositive" finished-at="2025-05-27T23:42:28 IST" duration-ms="954" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserPositive -->
+        <test-method signature="updateUserNegative()[pri:0, instance:apis.UpdateUserTest@6ecab872]" started-at="2025-05-27T23:42:27 IST" name="updateUserNegative" finished-at="2025-05-27T23:42:28 IST" duration-ms="942" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserNegative -->
+      </class> <!-- apis.UpdateUserTest -->
+    </test> <!-- Test -->
+  </suite> <!-- PetStore API Suite -->
+</testng-results>

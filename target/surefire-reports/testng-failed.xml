@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="methods" name="Failed suite [PetStore API Suite]" guice-stage="DEVELOPMENT">
+<suite parallel="methods" name="Failed suite [PetStore API Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <listeners>
     <listener class-name="base.TestListener"/>
   </listeners>
-  <test thread-count="5" parallel="methods" name="Test(failed)">
+  <test thread-count="5" parallel="methods" name="Test(failed)" verbose="0">
     <classes>
-      <class name="apis.CreateUserTest">
+      <class name="apis.GetUserByNameTest">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="createUserPositive"/>
-          <include name="createUserNegative"/>
+          <include name="getUserPositive"/>
         </methods>
-      </class> <!-- apis.CreateUserTest -->
+      </class> <!-- apis.GetUserByNameTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [PetStore API Suite] -->

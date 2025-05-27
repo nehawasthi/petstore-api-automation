@@ -1,98 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="1" ignored="1" total="10" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-27T23:06:27 IST" name="PetStore API Suite" finished-at="2025-05-27T23:06:29 IST" duration-ms="2246">
+  <suite started-at="2025-05-27T23:28:22 IST" name="PetStore API Suite" finished-at="2025-05-27T23:28:24 IST" duration-ms="2339">
     <groups>
     </groups>
-    <test started-at="2025-05-27T23:06:27 IST" name="Test" finished-at="2025-05-27T23:06:29 IST" duration-ms="2246">
+    <test started-at="2025-05-27T23:28:22 IST" name="Test" finished-at="2025-05-27T23:28:24 IST" duration-ms="2339">
       <class name="apis.GetUserByNameTest">
-        <test-method signature="getUserPositive()[pri:0, instance:apis.GetUserByNameTest@798162bc]" started-at="2025-05-27T23:06:27 IST" name="getUserPositive" finished-at="2025-05-27T23:06:28 IST" duration-ms="1257" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getUserPositive -->
-        <test-method signature="getUserNegative()[pri:0, instance:apis.GetUserByNameTest@798162bc]" started-at="2025-05-27T23:06:27 IST" name="getUserNegative" finished-at="2025-05-27T23:06:28 IST" duration-ms="1250" status="PASS">
+        <test-method signature="getUserNegative()[pri:0, instance:apis.GetUserByNameTest@798162bc]" started-at="2025-05-27T23:28:22 IST" name="getUserNegative" finished-at="2025-05-27T23:28:23 IST" duration-ms="1342" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUserNegative -->
+        <test-method signature="getUserPositive()[pri:0, instance:apis.GetUserByNameTest@798162bc]" started-at="2025-05-27T23:28:22 IST" name="getUserPositive" finished-at="2025-05-27T23:28:23 IST" duration-ms="1341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserPositive -->
       </class> <!-- apis.GetUserByNameTest -->
       <class name="apis.DeleteUserTest">
-        <test-method signature="deleteUserNegative()[pri:0, instance:apis.DeleteUserTest@1df8da7a]" started-at="2025-05-27T23:06:27 IST" name="deleteUserNegative" finished-at="2025-05-27T23:06:28 IST" duration-ms="1264" status="PASS">
+        <test-method signature="deleteUserNegative()[pri:0, instance:apis.DeleteUserTest@1df8da7a]" started-at="2025-05-27T23:28:22 IST" name="deleteUserNegative" finished-at="2025-05-27T23:28:23 IST" duration-ms="1342" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteUserNegative -->
-        <test-method signature="deleteUserPositive()[pri:0, instance:apis.DeleteUserTest@1df8da7a]" started-at="2025-05-27T23:06:28 IST" name="deleteUserPositive" finished-at="2025-05-27T23:06:29 IST" duration-ms="942" status="PASS">
+        <test-method signature="deleteUserPositive()[pri:0, instance:apis.DeleteUserTest@1df8da7a]" started-at="2025-05-27T23:28:23 IST" name="deleteUserPositive" finished-at="2025-05-27T23:28:24 IST" duration-ms="942" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteUserPositive -->
       </class> <!-- apis.DeleteUserTest -->
       <class name="base.BaseTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:base.BaseTest@2d0399f4]" started-at="2025-05-27T23:06:25 IST" name="setup" finished-at="2025-05-27T23:06:27 IST" duration-ms="2630" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:base.BaseTest@2d0399f4]" started-at="2025-05-27T23:28:19 IST" name="setup" finished-at="2025-05-27T23:28:22 IST" duration-ms="2876" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:base.BaseTest@2d0399f4]" started-at="2025-05-27T23:06:30 IST" name="tearDown" finished-at="2025-05-27T23:06:30 IST" duration-ms="21" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:base.BaseTest@2d0399f4]" started-at="2025-05-27T23:28:24 IST" name="tearDown" finished-at="2025-05-27T23:28:24 IST" duration-ms="24" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- base.BaseTest -->
       <class name="apis.CreateUserTest">
-        <test-method signature="createUserPositive()[pri:0, instance:apis.CreateUserTest@465232e9]" started-at="2025-05-27T23:06:27 IST" name="createUserPositive" finished-at="2025-05-27T23:06:28 IST" duration-ms="1250" status="PASS">
+        <test-method signature="createUserNegative()[pri:0, instance:apis.CreateUserTest@465232e9]" started-at="2025-05-27T23:28:22 IST" name="createUserNegative" finished-at="2025-05-27T23:28:23 IST" duration-ms="1343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserNegative -->
+        <test-method signature="createUserPositive()[pri:0, instance:apis.CreateUserTest@465232e9]" started-at="2025-05-27T23:28:22 IST" name="createUserPositive" finished-at="2025-05-27T23:28:23 IST" duration-ms="1341" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUserPositive -->
-        <test-method retried="true" signature="createUserNegative()[pri:0, instance:apis.CreateUserTest@465232e9]" started-at="2025-05-27T23:06:27 IST" name="createUserNegative" finished-at="2025-05-27T23:06:28 IST" duration-ms="1244" status="SKIP">
-          <exception class="com.microsoft.playwright.PlaywrightException">
-            <message>
-              <![CDATA[Cannot find command to respond: 6]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[com.microsoft.playwright.PlaywrightException: Cannot find command to respond: 6
-at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:243)
-at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
-at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
-at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
-at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-at com.microsoft.playwright.impl.APIRequestContextImpl.fetchImpl(APIRequestContextImpl.java:138)
-at com.microsoft.playwright.impl.APIRequestContextImpl.lambda$fetch$1(APIRequestContextImpl.java:59)
-at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-at com.microsoft.playwright.impl.APIRequestContextImpl.fetch(APIRequestContextImpl.java:59)
-at com.microsoft.playwright.impl.APIRequestContextImpl.post(APIRequestContextImpl.java:194)
-at apis.CreateUserTest.createUserNegative(CreateUserTest.java:49)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1575)
-]]>
-            </full-stacktrace>
-          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createUserNegative -->
-        <test-method signature="createUserNegative()[pri:0, instance:apis.CreateUserTest@465232e9]" started-at="2025-05-27T23:06:28 IST" name="createUserNegative" finished-at="2025-05-27T23:06:29 IST" duration-ms="957" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createUserNegative -->
       </class> <!-- apis.CreateUserTest -->
       <class name="apis.UpdateUserTest">
-        <test-method signature="updateUserNegative()[pri:0, instance:apis.UpdateUserTest@23941fb4]" started-at="2025-05-27T23:06:28 IST" name="updateUserNegative" finished-at="2025-05-27T23:06:29 IST" duration-ms="932" status="PASS">
+        <test-method signature="updateUserNegative()[pri:0, instance:apis.UpdateUserTest@23941fb4]" started-at="2025-05-27T23:28:23 IST" name="updateUserNegative" finished-at="2025-05-27T23:28:24 IST" duration-ms="947" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateUserNegative -->
-        <test-method signature="updateUserPositive()[pri:0, instance:apis.UpdateUserTest@23941fb4]" started-at="2025-05-27T23:06:28 IST" name="updateUserPositive" finished-at="2025-05-27T23:06:29 IST" duration-ms="938" status="PASS">
+        <test-method signature="updateUserPositive()[pri:0, instance:apis.UpdateUserTest@23941fb4]" started-at="2025-05-27T23:28:23 IST" name="updateUserPositive" finished-at="2025-05-27T23:28:24 IST" duration-ms="928" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateUserPositive -->

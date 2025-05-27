@@ -10,6 +10,7 @@
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
+          <include name="createUserPositive"/>
           <include name="createUserNegative"/>
         </methods>
       </class> <!-- apis.CreateUserTest -->
