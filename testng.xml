@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="PetStore API Suite" verbose="1" parallel="true">
@@ -13,7 +12,5 @@
 			<class name="apis.DeleteUserTest" />
 			<class name="apis.UpdateUserTest" />
 		</classes>
-	</test> <!--
-	Test -->
-</suite> <!--
-Suite -->
+	</test>
+</suite>

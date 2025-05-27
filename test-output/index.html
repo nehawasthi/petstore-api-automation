@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-PetStore_API_Suite" class="navigator-link">
-              <span class="suite-name border-failed">PetStore API Suite</span>
+              <span class="suite-name border-passed">PetStore API Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,45 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods, 2 failed,  2 skipped,  6 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-PetStore_API_Suite" class="hide-methods failed suite-PetStore_API_Suite"> (hide)</a> <!-- hide-methods failed suite-PetStore_API_Suite -->
-                      <a href="#" panel-name="suite-PetStore_API_Suite" class="show-methods failed suite-PetStore_API_Suite"> (show)</a> <!-- show-methods failed suite-PetStore_API_Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-PetStore_API_Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-PetStore_API_Suite" title="apis.DeleteUserTest" class="method navigator-link" hash-for-method="deleteUserPositive">deleteUserPositive</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-PetStore_API_Suite" title="apis.GetUserByNameTest" class="method navigator-link" hash-for-method="getUserPositive">getUserPositive</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-PetStore_API_Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Retried methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-PetStore_API_Suite" class="hide-methods skipped suite-PetStore_API_Suite"> (hide)</a> <!-- hide-methods skipped suite-PetStore_API_Suite -->
-                      <a href="#" panel-name="suite-PetStore_API_Suite" class="show-methods skipped suite-PetStore_API_Suite"> (show)</a> <!-- show-methods skipped suite-PetStore_API_Suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-PetStore_API_Suite">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-PetStore_API_Suite" title="apis.DeleteUserTest" class="method navigator-link" hash-for-method="deleteUserPositive">deleteUserPositive</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-PetStore_API_Suite" title="apis.GetUserByNameTest" class="method navigator-link" hash-for-method="getUserPositive">getUserPositive</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-PetStore_API_Suite -->
+                    <span class="method-stats">8 methods,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -156,7 +118,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PetStore_API_Suite" title="apis.DeleteUserTest" class="method navigator-link" hash-for-method="deleteUserPositive">deleteUserPositive</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-PetStore_API_Suite" title="apis.GetUserByNameTest" class="method navigator-link" hash-for-method="getUserNegative">getUserNegative</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PetStore_API_Suite" title="apis.GetUserByNameTest" class="method navigator-link" hash-for-method="getUserPositive">getUserPositive</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -181,102 +153,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-PetStore_API_Suite" class="panel PetStore_API_Suite">
-          <div class="suite-PetStore_API_Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">apis.GetUserByNameTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getUserPositive">
-                  </a> <!-- getUserPositive -->
-                  <span class="method-name">getUserPositive</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [404]
-	at apis.GetUserByNameTest.getUserPositive(GetUserByNameTest.java:24)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
-... Removed 18 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-PetStore_API_Suite-class-failed -->
-          <div class="suite-PetStore_API_Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">apis.DeleteUserTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="deleteUserPositive">
-                  </a> <!-- deleteUserPositive -->
-                  <span class="method-name">deleteUserPositive</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [404]
-	at apis.DeleteUserTest.deleteUserPositive(DeleteUserTest.java:28)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
-... Removed 18 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-PetStore_API_Suite-class-failed -->
-          <div class="suite-PetStore_API_Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">apis.GetUserByNameTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getUserPositive">
-                  </a> <!-- getUserPositive -->
-                  <span class="method-name">getUserPositive</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [404]
-	at apis.GetUserByNameTest.getUserPositive(GetUserByNameTest.java:24)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
-... Removed 18 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-PetStore_API_Suite-class-skipped -->
-          <div class="suite-PetStore_API_Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">apis.DeleteUserTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="deleteUserPositive">
-                  </a> <!-- deleteUserPositive -->
-                  <span class="method-name">deleteUserPositive</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [404]
-	at apis.DeleteUserTest.deleteUserPositive(DeleteUserTest.java:28)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
-... Removed 18 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-PetStore_API_Suite-class-skipped -->
           <div class="suite-PetStore_API_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -288,6 +164,13 @@
                   <a name="getUserNegative">
                   </a> <!-- getUserNegative -->
                   <span class="method-name">getUserNegative</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getUserPositive">
+                  </a> <!-- getUserPositive -->
+                  <span class="method-name">getUserPositive</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -347,6 +230,13 @@
                   <a name="deleteUserNegative">
                   </a> <!-- deleteUserNegative -->
                   <span class="method-name">deleteUserNegative</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteUserPositive">
+                  </a> <!-- deleteUserPositive -->
+                  <span class="method-name">deleteUserPositive</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -410,52 +300,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(10);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'getUserPositive')
-data.setCell(0, 2, 'apis.GetUserByNameTest')
-data.setCell(0, 3, 1393);
+data.setCell(0, 1, 'createUserNegative')
+data.setCell(0, 2, 'apis.CreateUserTest')
+data.setCell(0, 3, 1723);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'getUserNegative')
-data.setCell(1, 2, 'apis.GetUserByNameTest')
-data.setCell(1, 3, 1384);
+data.setCell(1, 1, 'deleteUserNegative')
+data.setCell(1, 2, 'apis.DeleteUserTest')
+data.setCell(1, 3, 1502);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'createUserNegative')
-data.setCell(2, 2, 'apis.CreateUserTest')
-data.setCell(2, 3, 1384);
+data.setCell(2, 1, 'getUserPositive')
+data.setCell(2, 2, 'apis.GetUserByNameTest')
+data.setCell(2, 3, 1500);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'deleteUserNegative')
-data.setCell(3, 2, 'apis.DeleteUserTest')
-data.setCell(3, 3, 1384);
+data.setCell(3, 1, 'getUserNegative')
+data.setCell(3, 2, 'apis.GetUserByNameTest')
+data.setCell(3, 3, 1500);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'createUserPositive')
 data.setCell(4, 2, 'apis.CreateUserTest')
-data.setCell(4, 3, 1384);
+data.setCell(4, 3, 1500);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'deleteUserPositive')
-data.setCell(5, 2, 'apis.DeleteUserTest')
-data.setCell(5, 3, 1070);
+data.setCell(5, 1, 'updateUserPositive')
+data.setCell(5, 2, 'apis.UpdateUserTest')
+data.setCell(5, 3, 1084);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'updateUserNegative')
-data.setCell(6, 2, 'apis.UpdateUserTest')
-data.setCell(6, 3, 1050);
+data.setCell(6, 1, 'deleteUserPositive')
+data.setCell(6, 2, 'apis.DeleteUserTest')
+data.setCell(6, 3, 1069);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'deleteUserPositive')
-data.setCell(7, 2, 'apis.DeleteUserTest')
-data.setCell(7, 3, 1034);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'updateUserPositive')
-data.setCell(8, 2, 'apis.UpdateUserTest')
-data.setCell(8, 3, 1031);
-data.setCell(9, 0, 9)
-data.setCell(9, 1, 'getUserPositive')
-data.setCell(9, 2, 'apis.GetUserByNameTest')
-data.setCell(9, 3, 1015);
+data.setCell(7, 1, 'updateUserNegative')
+data.setCell(7, 2, 'apis.UpdateUserTest')
+data.setCell(7, 3, 1064);
 window.suiteTableData['PetStore_API_Suite']= { tableData: data, tableDiv: 'times-div-PetStore_API_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-PetStore_API_Suite">
               </div> <!-- times-div-PetStore_API_Suite -->
             </div> <!-- times-div -->
@@ -527,78 +409,57 @@ return data;
               <div class="chronological-class-name">apis.GetUserByNameTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">getUserPositive</span>
-                <span class="method-start">3189 ms</span>
+                <span class="method-start">4617 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getUserNegative</span>
-                <span class="method-start">3189 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apis.CreateUserTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">createUserNegative</span>
-                <span class="method-start">3189 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apis.DeleteUserTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">deleteUserNegative</span>
-                <span class="method-start">3189 ms</span>
+                <span class="method-start">4617 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apis.CreateUserTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">createUserPositive</span>
-                <span class="method-start">3189 ms</span>
+                <span class="method-start">4617 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">apis.UpdateUserTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">apis.DeleteUserTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">updateUserNegative</span>
-                <span class="method-start">4581 ms</span>
+                <span class="method-name">deleteUserNegative</span>
+                <span class="method-start">4617 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apis.CreateUserTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createUserNegative</span>
+                <span class="method-start">4617 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apis.DeleteUserTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">deleteUserPositive</span>
-                <span class="method-start">4581 ms</span>
+                <span class="method-start">6138 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apis.UpdateUserTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">updateUserPositive</span>
-                <span class="method-start">4584 ms</span>
+                <span class="method-start">6139 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apis.GetUserByNameTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">getUserPositive</span>
-                <span class="method-start">4585 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apis.DeleteUserTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">deleteUserPositive</span>
-                <span class="method-start">5618 ms</span>
+                <span class="method-name">updateUserNegative</span>
+                <span class="method-start">6139 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">base.BaseTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">7058 ms</span>
+                <span class="method-start">7718 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

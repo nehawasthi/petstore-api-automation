@@ -1,11 +1,3 @@
-name: Java CI with TestNG and Playwright
-
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -30,25 +22,20 @@ jobs:
           npm install -D playwright
           npx playwright install --with-deps
 
+      # Diagnostic Step 1: Show first lines of testng.xml and reveal hidden characters
+      - name: Show testng.xml (verify encoding/format)
+        run: |
+          head -n 5 testng.xml
+          od -c testng.xml | head -n 10
+
+      # Diagnostic Step 2: Validate well-formed XML
+      - name: Validate testng.xml
+        run: |
+          sudo apt-get install -y libxml2-utils
+          xmllint --noout testng.xml
+
       - name: Build Project (Skip Tests)
         run: mvn clean install -DskipTests=true
 
       - name: Run Tests
         run: mvn test
-
-      - name: Generate Coverage Report
-        run: mvn verify
-
-      - name: Upload ExtentReport
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: extent-report
-          path: test-output/ExtentReport.html
-
-      - name: Upload JaCoCo Coverage Report
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: jacoco-report
-          path: target/site/jacoco/index.html
