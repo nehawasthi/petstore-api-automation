@@ -6,20 +6,13 @@
   </listeners>
   <test thread-count="5" parallel="methods" name="Test(failed)">
     <classes>
-      <class name="apis.GetUserByNameTest">
+      <class name="apis.CreateUserTest">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="getUserPositive"/>
+          <include name="createUserNegative"/>
         </methods>
-      </class> <!-- apis.GetUserByNameTest -->
-      <class name="apis.DeleteUserTest">
-        <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="deleteUserPositive"/>
-        </methods>
-      </class> <!-- apis.DeleteUserTest -->
+      </class> <!-- apis.CreateUserTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [PetStore API Suite] -->

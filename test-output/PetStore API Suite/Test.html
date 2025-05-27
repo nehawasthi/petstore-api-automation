@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>8/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Tue May 27 21:09:38 IST 2025</td>
+<td>Started on:</td><td>Tue May 27 23:06:27 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>2 seconds (2651 ms)</td>
+<tr><td>Total time:</td><td>2 seconds (2246 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,43 +76,105 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='apis.GetUserByNameTest.getUserPositive()'><b>getUserPositive</b><br>Test class: apis.GetUserByNameTest</td>
+<td title='apis.UpdateUserTest.updateUserNegative()'><b>updateUserNegative</b><br>Test class: apis.UpdateUserTest</td>
 <td></td>
-<td>1</td>
-<td>apis.GetUserByNameTest@798162bc</td></tr>
-<tr>
-<td title='apis.UpdateUserTest.updateUserPositive()'><b>updateUserPositive</b><br>Test class: apis.UpdateUserTest</td>
-<td></td>
-<td>1</td>
+<td>0</td>
 <td>apis.UpdateUserTest@23941fb4</td></tr>
-<tr>
-<td title='apis.GetUserByNameTest.getUserNegative()'><b>getUserNegative</b><br>Test class: apis.GetUserByNameTest</td>
-<td></td>
-<td>1</td>
-<td>apis.GetUserByNameTest@798162bc</td></tr>
 <tr>
 <td title='apis.DeleteUserTest.deleteUserPositive()'><b>deleteUserPositive</b><br>Test class: apis.DeleteUserTest</td>
 <td></td>
-<td>1</td>
+<td>0</td>
 <td>apis.DeleteUserTest@1df8da7a</td></tr>
-<tr>
-<td title='apis.CreateUserTest.createUserPositive()'><b>createUserPositive</b><br>Test class: apis.CreateUserTest</td>
-<td></td>
-<td>1</td>
-<td>apis.CreateUserTest@465232e9</td></tr>
-<tr>
-<td title='apis.UpdateUserTest.updateUserNegative()'><b>updateUserNegative</b><br>Test class: apis.UpdateUserTest</td>
-<td></td>
-<td>1</td>
-<td>apis.UpdateUserTest@23941fb4</td></tr>
 <tr>
 <td title='apis.DeleteUserTest.deleteUserNegative()'><b>deleteUserNegative</b><br>Test class: apis.DeleteUserTest</td>
 <td></td>
 <td>1</td>
 <td>apis.DeleteUserTest@1df8da7a</td></tr>
 <tr>
+<td title='apis.GetUserByNameTest.getUserPositive()'><b>getUserPositive</b><br>Test class: apis.GetUserByNameTest</td>
+<td></td>
+<td>1</td>
+<td>apis.GetUserByNameTest@798162bc</td></tr>
+<tr>
+<td title='apis.GetUserByNameTest.getUserNegative()'><b>getUserNegative</b><br>Test class: apis.GetUserByNameTest</td>
+<td></td>
+<td>1</td>
+<td>apis.GetUserByNameTest@798162bc</td></tr>
+<tr>
+<td title='apis.UpdateUserTest.updateUserPositive()'><b>updateUserPositive</b><br>Test class: apis.UpdateUserTest</td>
+<td></td>
+<td>0</td>
+<td>apis.UpdateUserTest@23941fb4</td></tr>
+<tr>
 <td title='apis.CreateUserTest.createUserNegative()'><b>createUserNegative</b><br>Test class: apis.CreateUserTest</td>
 <td></td>
+<td>0</td>
+<td>apis.CreateUserTest@465232e9</td></tr>
+<tr>
+<td title='apis.CreateUserTest.createUserPositive()'><b>createUserPositive</b><br>Test class: apis.CreateUserTest</td>
+<td></td>
+<td>1</td>
+<td>apis.CreateUserTest@465232e9</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='apis.CreateUserTest.createUserNegative()'><b>createUserNegative</b><br>Test class: apis.CreateUserTest</td>
+<td><div><pre>com.microsoft.playwright.PlaywrightException: Cannot find command to respond: 6
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:243)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.APIRequestContextImpl.fetchImpl(APIRequestContextImpl.java:138)
+	at com.microsoft.playwright.impl.APIRequestContextImpl.lambda$fetch$1(APIRequestContextImpl.java:59)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.APIRequestContextImpl.fetch(APIRequestContextImpl.java:59)
+	at com.microsoft.playwright.impl.APIRequestContextImpl.post(APIRequestContextImpl.java:194)
+	at apis.CreateUserTest.createUserNegative(CreateUserTest.java:49)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1379858967", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1379858967'><pre>com.microsoft.playwright.PlaywrightException: Cannot find command to respond: 6
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:243)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.APIRequestContextImpl.fetchImpl(APIRequestContextImpl.java:138)
+	at com.microsoft.playwright.impl.APIRequestContextImpl.lambda$fetch$1(APIRequestContextImpl.java:59)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.APIRequestContextImpl.fetch(APIRequestContextImpl.java:59)
+	at com.microsoft.playwright.impl.APIRequestContextImpl.post(APIRequestContextImpl.java:194)
+	at apis.CreateUserTest.createUserNegative(CreateUserTest.java:49)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+</pre></div></td>
 <td>1</td>
 <td>apis.CreateUserTest@465232e9</td></tr>
 </table><p>

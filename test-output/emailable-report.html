@@ -9,17 +9,36 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">PetStore API Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">2,651</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">8</td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">2,246</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">PetStore API Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">apis.CreateUserTest</td><td><a href="#m0">createUserNegative</a></td><td rowspan="1">1748360378882</td><td rowspan="1">1723</td></tr><tr class="passedeven"><td><a href="#m1">createUserPositive</a></td><td rowspan="1">1748360378882</td><td rowspan="1">1500</td></tr><tr class="passedodd"><td rowspan="2">apis.DeleteUserTest</td><td><a href="#m2">deleteUserNegative</a></td><td rowspan="1">1748360378882</td><td rowspan="1">1502</td></tr><tr class="passedodd"><td><a href="#m3">deleteUserPositive</a></td><td rowspan="1">1748360380403</td><td rowspan="1">1069</td></tr><tr class="passedeven"><td rowspan="2">apis.GetUserByNameTest</td><td><a href="#m4">getUserNegative</a></td><td rowspan="1">1748360378882</td><td rowspan="1">1500</td></tr><tr class="passedeven"><td><a href="#m5">getUserPositive</a></td><td rowspan="1">1748360378882</td><td rowspan="1">1500</td></tr><tr class="passedodd"><td rowspan="2">apis.UpdateUserTest</td><td><a href="#m6">updateUserNegative</a></td><td rowspan="1">1748360380404</td><td rowspan="1">1064</td></tr><tr class="passedodd"><td><a href="#m7">updateUserPositive</a></td><td rowspan="1">1748360380404</td><td rowspan="1">1084</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">PetStore API Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">apis.CreateUserTest</td><td><a href="#m0">createUserNegative</a></td><td rowspan="1">1748367387668</td><td rowspan="1">1244</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">apis.CreateUserTest</td><td><a href="#m1">createUserNegative</a></td><td rowspan="1">1748367388928</td><td rowspan="1">957</td></tr><tr class="passedeven"><td><a href="#m2">createUserPositive</a></td><td rowspan="1">1748367387668</td><td rowspan="1">1250</td></tr><tr class="passedodd"><td rowspan="2">apis.DeleteUserTest</td><td><a href="#m3">deleteUserNegative</a></td><td rowspan="1">1748367387668</td><td rowspan="1">1264</td></tr><tr class="passedodd"><td><a href="#m4">deleteUserPositive</a></td><td rowspan="1">1748367388927</td><td rowspan="1">942</td></tr><tr class="passedeven"><td rowspan="2">apis.GetUserByNameTest</td><td><a href="#m5">getUserNegative</a></td><td rowspan="1">1748367387668</td><td rowspan="1">1250</td></tr><tr class="passedeven"><td><a href="#m6">getUserPositive</a></td><td rowspan="1">1748367387668</td><td rowspan="1">1257</td></tr><tr class="passedodd"><td rowspan="2">apis.UpdateUserTest</td><td><a href="#m7">updateUserNegative</a></td><td rowspan="1">1748367388929</td><td rowspan="1">932</td></tr><tr class="passedodd"><td><a href="#m8">updateUserPositive</a></td><td rowspan="1">1748367388932</td><td rowspan="1">938</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">apis.CreateUserTest#createUserNegative</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">apis.CreateUserTest#createUserPositive</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">apis.DeleteUserTest#deleteUserNegative</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">apis.DeleteUserTest#deleteUserPositive</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">apis.GetUserByNameTest#getUserNegative</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">apis.GetUserByNameTest#getUserPositive</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">apis.UpdateUserTest#updateUserNegative</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">apis.UpdateUserTest#updateUserPositive</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">apis.CreateUserTest#createUserNegative</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">com.microsoft.playwright.PlaywrightException: Cannot find command to respond: 6
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:243)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.APIRequestContextImpl.fetchImpl(APIRequestContextImpl.java:138)
+	at com.microsoft.playwright.impl.APIRequestContextImpl.lambda$fetch$1(APIRequestContextImpl.java:59)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.APIRequestContextImpl.fetch(APIRequestContextImpl.java:59)
+	at com.microsoft.playwright.impl.APIRequestContextImpl.post(APIRequestContextImpl.java:194)
+	at apis.CreateUserTest.createUserNegative(CreateUserTest.java:49)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+... Removed 11 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">apis.CreateUserTest#createUserNegative</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">apis.CreateUserTest#createUserPositive</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">apis.DeleteUserTest#deleteUserNegative</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">apis.DeleteUserTest#deleteUserPositive</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">apis.GetUserByNameTest#getUserNegative</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">apis.GetUserByNameTest#getUserPositive</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">apis.UpdateUserTest#updateUserNegative</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">apis.UpdateUserTest#updateUserPositive</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

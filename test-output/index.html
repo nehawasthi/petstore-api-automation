@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-PetStore_API_Suite" class="navigator-link">
-              <span class="suite-name border-passed">PetStore API Suite</span>
+              <span class="suite-name border-skipped">PetStore API Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">9 methods,  1 skipped,  8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-PetStore_API_Suite" class="hide-methods skipped suite-PetStore_API_Suite"> (hide)</a> <!-- hide-methods skipped suite-PetStore_API_Suite -->
+                      <a href="#" panel-name="suite-PetStore_API_Suite" class="show-methods skipped suite-PetStore_API_Suite"> (show)</a> <!-- show-methods skipped suite-PetStore_API_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-PetStore_API_Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-PetStore_API_Suite" title="apis.CreateUserTest" class="method navigator-link" hash-for-method="createUserNegative">createUserNegative</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-PetStore_API_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -153,6 +167,41 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-PetStore_API_Suite" class="panel PetStore_API_Suite">
+          <div class="suite-PetStore_API_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">apis.CreateUserTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createUserNegative">
+                  </a> <!-- createUserNegative -->
+                  <span class="method-name">createUserNegative</span>
+                  <div class="stack-trace">com.microsoft.playwright.PlaywrightException: Cannot find command to respond: 6
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:243)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.APIRequestContextImpl.fetchImpl(APIRequestContextImpl.java:138)
+	at com.microsoft.playwright.impl.APIRequestContextImpl.lambda$fetch$1(APIRequestContextImpl.java:59)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.APIRequestContextImpl.fetch(APIRequestContextImpl.java:59)
+	at com.microsoft.playwright.impl.APIRequestContextImpl.post(APIRequestContextImpl.java:194)
+	at apis.CreateUserTest.createUserNegative(CreateUserTest.java:49)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+... Removed 11 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PetStore_API_Suite-class-skipped -->
           <div class="suite-PetStore_API_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -300,39 +349,43 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(9);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'createUserNegative')
-data.setCell(0, 2, 'apis.CreateUserTest')
-data.setCell(0, 3, 1723);
+data.setCell(0, 1, 'deleteUserNegative')
+data.setCell(0, 2, 'apis.DeleteUserTest')
+data.setCell(0, 3, 1264);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'deleteUserNegative')
-data.setCell(1, 2, 'apis.DeleteUserTest')
-data.setCell(1, 3, 1502);
+data.setCell(1, 1, 'getUserPositive')
+data.setCell(1, 2, 'apis.GetUserByNameTest')
+data.setCell(1, 3, 1257);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'getUserPositive')
+data.setCell(2, 1, 'getUserNegative')
 data.setCell(2, 2, 'apis.GetUserByNameTest')
-data.setCell(2, 3, 1500);
+data.setCell(2, 3, 1250);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'getUserNegative')
-data.setCell(3, 2, 'apis.GetUserByNameTest')
-data.setCell(3, 3, 1500);
+data.setCell(3, 1, 'createUserPositive')
+data.setCell(3, 2, 'apis.CreateUserTest')
+data.setCell(3, 3, 1250);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'createUserPositive')
+data.setCell(4, 1, 'createUserNegative')
 data.setCell(4, 2, 'apis.CreateUserTest')
-data.setCell(4, 3, 1500);
+data.setCell(4, 3, 1244);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'updateUserPositive')
-data.setCell(5, 2, 'apis.UpdateUserTest')
-data.setCell(5, 3, 1084);
+data.setCell(5, 1, 'createUserNegative')
+data.setCell(5, 2, 'apis.CreateUserTest')
+data.setCell(5, 3, 957);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'deleteUserPositive')
 data.setCell(6, 2, 'apis.DeleteUserTest')
-data.setCell(6, 3, 1069);
+data.setCell(6, 3, 942);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'updateUserNegative')
+data.setCell(7, 1, 'updateUserPositive')
 data.setCell(7, 2, 'apis.UpdateUserTest')
-data.setCell(7, 3, 1064);
+data.setCell(7, 3, 938);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'updateUserNegative')
+data.setCell(8, 2, 'apis.UpdateUserTest')
+data.setCell(8, 3, 932);
 window.suiteTableData['PetStore_API_Suite']= { tableData: data, tableDiv: 'times-div-PetStore_API_Suite'}
 return data;
 }
@@ -406,60 +459,64 @@ return data;
               </div> <!-- configuration-suite before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">apis.GetUserByNameTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">getUserPositive</span>
-                <span class="method-start">4617 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">getUserNegative</span>
-                <span class="method-start">4617 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apis.CreateUserTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">createUserPositive</span>
-                <span class="method-start">4617 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
               <div class="chronological-class-name">apis.DeleteUserTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">deleteUserNegative</span>
-                <span class="method-start">4617 ms</span>
+                <span class="method-start">2658 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apis.GetUserByNameTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getUserPositive</span>
+                <span class="method-start">2658 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getUserNegative</span>
+                <span class="method-start">2658 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apis.CreateUserTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">createUserNegative</span>
-                <span class="method-start">4617 ms</span>
+                <span class="method-start">2658 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createUserPositive</span>
+                <span class="method-start">2658 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apis.DeleteUserTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">deleteUserPositive</span>
-                <span class="method-start">6138 ms</span>
+                <span class="method-start">3917 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apis.CreateUserTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createUserNegative</span>
+                <span class="method-start">3918 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apis.UpdateUserTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">updateUserPositive</span>
-                <span class="method-start">6139 ms</span>
+                <span class="method-name">updateUserNegative</span>
+                <span class="method-start">3919 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">updateUserNegative</span>
-                <span class="method-start">6139 ms</span>
+                <span class="method-name">updateUserPositive</span>
+                <span class="method-start">3922 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">base.BaseTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">7718 ms</span>
+                <span class="method-start">5349 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
