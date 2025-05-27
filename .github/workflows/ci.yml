@@ -33,15 +33,23 @@ jobs:
       - name: Build Project (Skip Tests)
         run: mvn clean install -DskipTests=true
 
-      - name: Run Tests
-        run: mvn test
+      - name: Run Tests & Generate Coverage
+        run: mvn clean verify
+
+      - name: List report files
+        run: |
+          echo "ExtentReport location:"
+          ls -l reports || echo "ExtentReport folder not found"
+
+          echo "JaCoCo report location:"
+          ls -l target/site/jacoco || echo "JaCoCo folder not found"
 
       - name: Upload ExtentReport
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: extent-report
-          path: test-output/ExtentReport.html
+          path: reports/ExtentReport.html
 
       - name: Upload JaCoCo Coverage Report
         if: always()
