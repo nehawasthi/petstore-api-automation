@@ -30,16 +30,6 @@ jobs:
           npm install -D playwright
           npx playwright install --with-deps
 
-      - name: Show testng.xml (verify encoding/format)
-        run: |
-          head -n 5 testng.xml
-          od -c testng.xml | head -n 10
-
-      - name: Validate testng.xml
-        run: |
-          sudo apt-get install -y libxml2-utils
-          xmllint --noout testng.xml
-
       - name: Build Project (Skip Tests)
         run: mvn clean install -DskipTests=true
 
