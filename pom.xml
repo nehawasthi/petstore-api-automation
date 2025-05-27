@@ -113,7 +113,11 @@
 				</executions>
 				<configuration>
 					<includes>
-						<include>**/*Test*.class</include>
+						<include>base.BaseTest.class</include>
+						<include>apis.CreateUserTest.class</include>
+						<include>apis.GetUserByNameTest.class</include>
+						<include>apis.DeleteUserTest.class</include>
+						<include>apis.UpdateUserTest.class</include>
 					</includes>
 				</configuration>
 			</plugin>
